@@ -1,0 +1,74 @@
+body{
+-webkit-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;
+}
+#changeDiv {
+    color: rgb(228, 216, 184); 
+    border-color: rgb(85, 107, 47); 
+    background-color: rgb(64, 1, 1);
+    height: 100px;
+    margin-bottom: 30px;
+    background-color: #D9A05E;
+    color: #2A2F4C;
+    padding: 10px;
+    font-size: 80px;
+    line-height: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+.themeChanger {
+	background: #444;
+	position: fixed;
+	top: 50%;
+	right: 0;
+	max-height: 100%;
+	z-index: 10000;
+	padding: 15px 10px;
+	border-radius: 0 5px 5px 0;
+	-webkit-transform: translate3d(0, -50%, 0);
+	transform: translate3d(0, -50%, 0);
+}
+.themeChanger-set {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+.themeChanger-set li {
+	width: 30px;
+	height: 30px;
+	display: block;
+	margin: 5px;
+	cursor:pointer;
+}
+.themeChanger-set li a{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.c-1 { background: #50514F; color: #fff;}
+.c-2 { background: #F25F5C; color: #f0f0f0; }
+.c-3 { background: #FFE066; color: #c0c3d5; }
+.c-4 { background: #247BA0; color: #5FA1E0; }
+.c-5 { background: #70C1B3; color: #c1d5c0; }
+@media screen and (max-width: 50em) {
+	.themeChanger {
+		bottom: 0;
+		height: 34px;
+		top: 95%;
+		right: 33%;
+	}
+	.themeChanger-set {
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-justify-content: center;
+		justify-content: center;
+	}
+	.themeChanger-set li {
+		margin: 2px;
+	}
+}
